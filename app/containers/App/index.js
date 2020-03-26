@@ -31,11 +31,8 @@ const AppWrapper = styled.div`
 export default function App() {
   return (
     <AppWrapper>
-      <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
-      >
-        <meta name="description" content="A React.js Boilerplate application" />
+      <Helmet titleTemplate="%s - FrontEnd Ninja" defaultTitle="FrontEnd Ninja">
+        <meta name="description" content="FrontEnd Ninja" />
       </Helmet>
       <Header />
       <Switch>
@@ -43,7 +40,7 @@ export default function App() {
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
       <GlobalStyle />
     </AppWrapper>
   );
