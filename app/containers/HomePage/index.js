@@ -23,7 +23,7 @@ import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import Layout from '../../components/Layout/index';
+import Layout from '../Layout/index';
 
 const key = 'home';
 
