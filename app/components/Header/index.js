@@ -19,13 +19,14 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 
 const drawerWidth = 240;
-
+// background: '#202933',
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    background: '#202933',
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -117,7 +118,7 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Front End Ninja
+            FrontEnd Ninja
           </Typography>
         </Toolbar>
       </AppBar>

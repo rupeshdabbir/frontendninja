@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import QuestionContainer from '../QuestionContainer/index';
 import ExpansionPanel from '../ExpanansionPanel/index';
+import CodeEditor from '../CodeEditor/index';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,7 +32,8 @@ export default function CenteredGrid() {
           <Paper className={classes.paper}>Hints</Paper>
         </Grid>
         <Grid item xs={6}>
-          <Paper className={classes.paper}>Code</Paper>
+          {/* <Paper className={classes.paper}>Code</Paper> */}
+          <CodeEditor />
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>TestCases</Paper>
